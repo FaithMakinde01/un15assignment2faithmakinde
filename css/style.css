@@ -1,183 +1,134 @@
-
-
-```css
-/* Reset default margin and padding for a consistent layout */
-body {
-  font-family: Arial, sans-serif; /* Sets the default font style */
-  margin: 0;
-  padding: 0;
-  text-align: center; /* Centers text globally */
-  background-image: url('https://images.pexels.com/photos/9701487/pexels-photo-9701487.jpeg?auto=compress&cs=tinysrgb&w=600'); /* New background image */
-  background-size: cover; /* Ensures the image covers the entire screen */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+@import url{https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900}
+@import url{https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Roboto:ital,wght@0,100..900;1,100..900};
+*{
+  margin:0;
+  padding:0;
 }
-
-/* Header Styling */
-header {
-  display: flex; /* Uses flexbox for layout */
-  justify-content: space-between; /* Pushes content to opposite sides */
-  align-items: center; /* Aligns items vertically */
-  padding: 20px;
-  background-color: #FFFFFF; /* White background */
-}
-
-header h1 {
-  margin-bottom: 20px; /* Adds space below the h1 element */
-}
-
-header p {
-  margin-top: 20px; /* Adds space above the p element */
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  background-color: #376d94;
-}
-
-/* Navigation Bar Styling */
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-menu li {
-  list-style: none;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem 1rem;
-  margin: 0 10px; /* Adds spacing between links */
-}
-
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: white;
-}
-
-@media (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #376d94;
-    width: 200%;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-menu li {
-    margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-}
-
-.background-container {
-  background-image: url('https://cordmagazine.com/wp-content/uploads/2021/02/slovacka-vlada-donacija-srbiji-feb-2020.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Center text */
-  color: white;
-}
-
-.content {
-  background-color: #f9f9f9; /* Light gray background */
-  padding: 20px; /* Add space inside the main section */
-  border-radius: 10px; /* Rounded corners */
-  text-align: center; /* Center text */
-  width: 100%; /* Full width */
-  max-width: 100%; /* Ensure it doesn't exceed the viewport */
-  margin: 0 auto; /* Center horizontally */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  border: 2px solid #2c3e50; /* Dark blue-gray border */
-}
-
-.content h2 {
-  color: #333;
-}
-
-.homepage {
-  background-image: url('https://wallpapercave.com/wp/dYgrQlq.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  color: white; /* Optional: To ensure text is readable */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body{
+  font-family:'Poppins', sans-serif;
   text-align: center;
 }
-.img_deg {
-  float: right;
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background: #Ff0000;
+  position: fixed;
+  display: flex;
+}
+.logo{
   width: 30%;
+  float: left;
+  text-align: left;
+  line-height: 100px;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Pacific';
+  color: #fff;
+  letter-spacing: 0px;
+}
+nav{
+  float: right;
+  line-height: 100px;
+}
+nav a{
+  text-decoration: none;
+  font-family: 'Poppins';
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: #fff;
+  padding: 36px 8px;
+  margin: 0 1px;
+}
+nav a:hover{
+  background: #fff;
+  color: #130f40;
+  font-weight: 700
+}
+.banner-area{
+  background-image: url(https://images.pexels.com/photos/19294710/pexels-photo-19294710/free-photo-of-view-of-historical-buildings-of-an-old-town-and-a-flag-of-slovakia.jpeg?auto=compress&cs=tinysrgb&w=600.jpg);
+  background-size: cover;
+  background-position: center center;
+  top: 100px;
+  height: 100vh; 
+  width: 100%;
+  position: fixed;
+}
+.banner-area: after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #130f40;
+  opacity: .7;
+  z-index: -1;
+}
+.banner-area h2{
+  padding-top: 8%;
+  font-size: 80px;
+  color:#fff
+}
+.content-area{
+  width: 100%;
+  height: 2400px;
+  position: relative;
+  background: #ADD8e6;
+  top: 600px;
+}
+.content-area h2{
+  font-size: 40px;
+  margin:0;
+  padding-top: 30px;
+  letter-spacing: 4px; 
+}
+.content-area p{
+  padding: 0% 0;
+  line-height: 35px;
+  text-align: ;
+  font-size: 20px;
+}
+.img_deg{
+  float: left;
+  width: 50%;
 }
 .pos_cen{
-  position:absolute;
-  width:70%
-  left: 15%
-  top:30%
-  background-color: #376d94;
+  position: ce;
+  width: 50%;
+  height: 400px;
+  left:25%;
+  top:30%;
+  border-radius:40px;
+  background-color: black;
+  padding: 30px;
 }
-body {
-  margin: 0;
-  padding:0;
-  font-family: sans-serif;
+.img_dfg{
+  float: right;
+  width: 50%;
 }
-section{
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  display: center;
-  justify-content: center; 
-  
+.we_help{
+  posotion:ce;
+  width:60%;
+  height: 500px;
+  left:30%;
+  top:30%;
+  border-radius:40px;
+  background-color: black;
+  padding: 30px; 
 }
-*{
-  box-sizing: border-box;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
-body,html{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: arial;
-}
-h1{
-  font-size: 30px;
-  text-transform: uppercase;
-  margin: 0;
-}
-.banner-img{
- background-image: <img src="https://wallpapercave.com/wp/dYgrQlq.jpg;"
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height= 100%;
-  
+
+.pos_cen, .we_help {
+  width: 38%; /* Adjust the width as needed */
 }

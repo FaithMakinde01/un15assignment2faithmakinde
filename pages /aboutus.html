@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="scripts/javascript.js"></script>
+</head> 
+<body>
+
+  <div class="box-area">
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#">SVCSM</a>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="sign-up.html">Sign Up</a>
+          <a href="courses.html">Courses</a>
+          <a href="games.html">Games</a>
+          <a href="events.html">Events</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/9037596/pexels-photo-9037596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.jpg" alt="">
+      </div>
+      <div class="text">
+        <h2 style="color: red">Slovenské Vzdelávacie Centrum (SVCM) <br>is a registered charity dedicated to preserving and promoting Slovak language and culture. </h2>
+        <p>While our primary focus is on supporting Slovak-speaking children and families, we warmly welcome anyone interested in learning the Slovak language and engaging with our traditions.</p>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div class="text">
+        <div id="vertical-line"></div>
+        <br>
+        <div class="sections">
+          <section class="section">
+            <h3 style="color: white">Our Mission</h3>
+            <p style="color: white">
+              We are here to keep our heritage alive, to ensure that children growing up abroad don’t lose their connection to their roots, and to create a place where Slovak culture thrives—even far from home.<br> 
+              Through our work, we bring Slovak-speaking families together, helping them build friendships, strengthen their cultural ties, and feel at home even while living in the UK. 
+              We are here to support families, guide them, and make sure no one feels lost when navigating life between two countries.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <div class="container">
+        <hr class="horizontal-line">
+        <p class="text"><strong>Did you know?</strong><br>Slovak vocabulary includes loanwords from Hungarian, German, and Latin due to historical interactions.</p>
+        <hr class="horizontal-line">
+      </div>
+
+  </div> <!-- End of .box-area -->
+
+    <section class="two-column-section">
+        <div class="text-content">
+            <p>Slovenské Vzdelávacie Centrum – South Manchester was founded by a group of dedicated teachers who shared a common vision—to establish a Slovak educational and cultural centre that truly makes a difference.</p>
+
+            <p>After months of hard work, we were proud to become a registered charity on 9th September 2024, marking a significant step in our journey. Our official launch on 15th September was a proud moment, celebrated in collaboration with the Faculty of Education from Univerzita Mateja Bela and the Association of Slovak Schools and Community Centres in the UK.</p>
+        </div>
+
+        <div class="image-content">
+            <img src="https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.jpg" alt="Community Activity">
+        </div>
+    </section>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vXPJCEpHpl4?si=LYs3YXntgkPIE8-2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div> <!-- End of .box-area -->
+
+  <footer>
+    <div class="footer-content">
+        <h4>Contact us</h4>
+        <p><strong>SVCSM</strong><br>
+            <a href="mailto:svcmanchester@yahoo.com" class="red">svcmanchester@yahoo.com</a><br>
+            <a href="tel:+1234567890">+1234567890</a><br>
+            Address: Sale High School, Manchester, United Kingdom.
+        </p>
+    </div>
+  </footer>
+
+</body>
+</html>
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Wrapper styling */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header styling */
+header {
+  width: 100%;
+  height: 100px;
+  background: #ff0000;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+/* Logo styling */
+.logo {
+  width: 30%;
+  float: left;
+  text-align: left;
+  line-height: 100px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Pacific';
+  color: #fff;
+  letter-spacing: 0px;
+}
+
+/* Navigation styling */
+nav {
+  float: right;
+  line-height: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: #fff;
+  padding: 36px 8px;
+  margin: 0 1px;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #130f40;
+  font-weight: 700;
+}
+
+/* Image container styling */
+.image-container {
+  padding: 20px; /* Add padding around the image */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Container styling */
+.container {
+  margin: 100px auto;
+  width: 75%;
+}
+
+img {
+  max-width: 550px;
+  float: right;
+  border: 3px solid;
+  margin-left: 40px;
+}
+
+.text h2 {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.text p {
+  font-size: 20px;
+}
+
+/* Container-2 styling */
+.container-2 {
+  margin: 10px auto;
+  width: 65%;
+}
+
+.text h3 {
+  font-size: 20px;
+}
+
+.text p {
+  font-size: 19px;
+}
+
+/* Container-3 styling */
+.container-3 {
+  margin: 100px auto;
+  width: 75%;
+}
+
+.image-container-3 {
+  max-width: 350px;
+  float: left;
+  border-radius: 10px;
+  border: 3px solid white;
+  margin-right: 20px;
+}
+
+.text h3 {
+  font-size: 50px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.section {
+  width: 100%;
+  padding: 50px;
+  border: 20px solid #ddd;
+  background-color: black;
+}
+
+.horizontal-line {
+  width: 100%; /* Width of the line */
+  border: 10px solid red; /* Style of the line */
+  margin: 35px 0; /* Space above and below the line */
+}
+
+.text {
+  font-size: 30px; /* Font size of the paragraph */
+}
+/* Section Container */
+.two-column-section {
+    display: flex; /* Enables side-by-side layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Creates space between text and image */
+    max-width: 1200px; /* Sets max width */
+    margin: auto; /* Centers section */
+    padding: 40px; /* Adds spacing */
+    gap: 30px; /* Adds space between text and image */
+}
+
+/* Text Styling */
+.text-content {
+    width: 50%; /* Adjusts text width */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Image Container */
+.image-content {
+    width: 45%; /* Adjusts image width */
+}
+
+/* Image Styling */
+.image-content img {
+    width: 100%; /* Makes image responsive */
+    border-radius: 10px; /* Adds rounded corners */
+    display: block;
+}
+
+/* 🔴 Highlight Text */
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .two-column-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+    }
+footer {
+    background-color: #fff; /* Change if you want a different background */
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    text-align: left;
+    padding-left: 20px; /* Moves text to the left */
+    color: #000;
+}
+
+.footer-content h4 {
+    color: #d6001c; /* Red color for heading */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-content a {
+    color: #d6001c; /* Red color for links */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
 

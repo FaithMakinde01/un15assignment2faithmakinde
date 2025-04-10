@@ -17,13 +17,13 @@
         </div>
         <nav>
           <a href="index.html">Home</a>
-          <a href="pages/aboutus.html">About us</a>
-          <a href="pages/sign-up.html">Sign Up</a>
-          <a href="pages/courses.html">Courses</a>
-          <a href="pages/games.html">Games</a>
-          <a href="pages/events.html">Events</a>
+          <a href="about.html">About Us</a>
+          <a href="sign.html">Sign Up</a>
+          <a href="courses.html">Courses</a>
+          <a href="games.html">Games</a>
+          <a href="events.html">Events</a>
         </nav>
-      
+      </div>
     </header>
 
     <div class="container">
@@ -36,6 +36,9 @@
       </div>
     </div>
 
+    <br></br>
+   
+    
     <div class="container-2">
       <div class="text">
         <div id="vertical-line"></div>
@@ -76,20 +79,18 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/vXPJCEpHpl4?si=LYs3YXntgkPIE8-2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div> <!-- End of .box-area -->
+  <br>
+  <br>
 
-  <footer>
-    <div class="footer-content">
-        <h4>Contact us</h4>
-        <p><strong>SVCSM</strong><br>
-            <a href="mailto:svcmanchester@yahoo.com" class="red">svcmanchester@yahoo.com</a><br>
-            <a href="tel:+1234567890">+1234567890</a><br>
-            Address: Sale High School, Manchester, United Kingdom.
-        </p>
+   <!-- Your main content goes here -->
     </div>
-  </footer>
-
+    <footer class="footer">
+        &copy; 2025 Slovenské Vzdelávacie Centrum South Manchester. All rights reserved.
+    </footer>
 </body>
 </html>
+
+
 /* General reset */
 * {
   margin: 0;
@@ -179,7 +180,7 @@ nav a:hover {
 /* Container styling */
 .container {
   margin: 100px auto;
-  width: 75%;
+  width: 75%; /* Increased width for the "Our Mission" section */
 }
 
 img {
@@ -190,12 +191,13 @@ img {
 }
 
 .text h2 {
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
 }
 
 .text p {
-  font-size: 20px;
+  font-size: 30px;
+  padding: 30px;
 }
 
 /* Container-2 styling */
@@ -252,75 +254,60 @@ img {
 .text {
   font-size: 30px; /* Font size of the paragraph */
 }
+
 /* Section Container */
 .two-column-section {
-    display: flex; /* Enables side-by-side layout */
-    align-items: center; /* Centers items vertically */
-    justify-content: space-between; /* Creates space between text and image */
-    max-width: 1200px; /* Sets max width */
-    margin: auto; /* Centers section */
-    padding: 40px; /* Adds spacing */
-    gap: 30px; /* Adds space between text and image */
+  display: flex; /* Enables side-by-side layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Creates space between text and image */
+  max-width: 1200px; /* Sets max width */
+  margin: auto; /* Centers section */
+  padding: 40px; /* Adds spacing */
+  gap: 30px; /* Adds space between text and image */
 }
 
 /* Text Styling */
 .text-content {
-    width: 50%; /* Adjusts text width */
-    font-size: 18px;
-    line-height: 1.6;
+  width: 50%; /* Adjusts text width */
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* Image Container */
 .image-content {
-    width: 45%; /* Adjusts image width */
+  width: 45%; /* Adjusts image width */
 }
 
 /* Image Styling */
 .image-content img {
-    width: 100%; /* Makes image responsive */
-    border-radius: 10px; /* Adds rounded corners */
-    display: block;
+  width: 100%; /* Makes image responsive */
+  border-radius: 10px; /* Adds rounded corners */
+  display: block;
 }
 
 /* 🔴 Highlight Text */
 .highlight {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
-@media (max-width: 768px) {
-    .two-column-section {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .text-content, .image-content {
-        width: 100%;
-    }
-footer {
-    background-color: #fff; /* Change if you want a different background */
-    padding: 20px;
+@media (max-width: 768px) {
+  .two-column-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content, .image-content {
+    width: 100%;
+  }
+}
+.footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
     width: 100%;
 }
-
-.footer-content {
-    text-align: left;
-    padding-left: 20px; /* Moves text to the left */
-    color: #000;
-}
-
-.footer-content h4 {
-    color: #d6001c; /* Red color for heading */
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.footer-content a {
-    color: #d6001c; /* Red color for links */
-    text-decoration: none;
-}
-
-.footer-content a:hover {
-    text-decoration: underline;
-}
-
 

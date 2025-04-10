@@ -12,15 +12,15 @@
     <header>
       <div class="wrapper">
         <div class="logo">
-          <a href="#">Slovack Charity In Manchester</a>
+          <a href="#">SVCSM</a>
         </div>
         <nav>
           <a href="index.html">Home</a>
-          <a href="pages/aboutus.html">AboutUs</a>
-          <a href="pages/sign-up.html">Sign Up</a>
-          <a href="pages/courses.html">Courses</a>
-          <a href="pages/games.html">Games</a>
-          <a href="pages/events.html">Events</a>
+          <a href="about.html">About Us</a>
+          <a href="sign.html">Sign Up</a>
+          <a href="courses.html">Courses</a>
+          <a href="games.html">Games</a>
+          <a href="events.html">Events</a>
         </nav>
       </div>
     </header>
@@ -53,20 +53,182 @@
         </div>
       </main>
     </div>
-    <!--footer section-->
-    <footer>
-      <h1>Contact us</h1>
-      <p>SVCSM<br />
-        Sale High School<br />
-        Manchester,<br />
-        M33<br />
-        000123476<br />
-        svcm@yahoo.com<br />
-        <strong>OUR SPONSORS:</strong><br />
-        The Manchester College<br />
-        Porta134 Cafe<br />
-      </p>
+
+    <footer class="footer">
+        &copy; 2025 Slovenské Vzdelávacie Centrum South Manchester. All rights reserved.
     </footer>
-  </div>
 </body>
 </html>
+
+
+        /* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  text-align: center;
+}
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background: #Ff0000;
+  position: fixed;
+  display: flex;
+}
+.logo{
+  width: 30%;
+  float: left;
+  text-align: left;
+  line-height: 100px;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Pacific';
+  color: #fff;
+  letter-spacing: 0px;
+}
+nav{
+  float: right;
+  line-height: 100px;
+}
+nav a{
+  text-decoration: none;
+  font-family: 'Poppins';
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: #fff;
+  padding: 36px 8px;
+  margin: 0 1px;
+}
+nav a:hover{
+  background: #fff;
+  color: #130f40;
+  font-weight: 700
+}
+.banner-area{
+  background-image: url(https://images.pexels.com/photos/19294710/pexels-photo-19294710/free-photo-of-view-of-historical-buildings-of-an-old-town-and-a-flag-of-slovakia.jpeg?auto=compress&cs=tinysrgb&w=600.jpg);
+  background-size: cover;
+  background-position: center center;
+  top: 100px;
+  height: 100vh; 
+  width: 100%;
+  position: fixed;
+}
+.banner-area: after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #130f40;
+  opacity: .7;
+  z-index: -1;
+}
+.banner-area h2{
+  padding-top: 8%;
+  font-size: 80px;
+  color:#fff
+}
+.content-area{
+  width: 100%;
+  flex:1;
+  min-height: 600px;
+  position: relative;
+  background: #fff;
+  top: 600px;
+}
+.content-area h2{
+  font-size: 40px;
+  margin:0;
+  padding-top: 20px;
+  letter-spacing: 4px; 
+}
+.content-area p{
+  padding: 0% 0;
+  line-height: 35px;
+  text-align: ;
+  font-size: 20px;
+}
+.img_deg{
+  float: left;
+  width: 50%;
+}
+.pos_cen{
+  position: ce;
+  width: 50%;
+  height: 400px;
+  left:25%;
+  top:30%;
+  border-radius:40px;
+  background-color: black;
+  padding: 20px;
+}
+.img_dfg{
+  float: right;
+  width: 50%;
+}
+.cta-container {
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff4500; /* Darker shade of Tomato */
+  transform: translateY(-5px);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+.we_help{
+  posotion:ce;
+  width:60%;
+  height: 500px;
+  left:30%;
+  top:30%;
+  border-radius:40px;
+  background-color: black;
+  padding: 10px; 
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.pos_cen, .we_help {
+  width: 38%; /* Adjust the width as needed */
+}
+.footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

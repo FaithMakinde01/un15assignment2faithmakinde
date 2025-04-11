@@ -1,13 +1,14 @@
-@import url{https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900}
-@import url{https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Roboto:ital,wght@0,100..900;1,100..900};
-*{
-  margin:0;
-  padding:0;
+ /* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body{
   font-family:'Poppins', sans-serif;
   text-align: center;
-} 
+}
 .wrapper{
   width: 90%;
   margin: 0 auto;
@@ -78,15 +79,16 @@ nav a:hover{
 }
 .content-area{
   width: 100%;
-  height: 2400px;
+  flex:1;
+  min-height: 600px;
   position: relative;
-  background: #ADD8e6;
+  background: #fff;
   top: 600px;
 }
 .content-area h2{
   font-size: 40px;
   margin:0;
-  padding-top: 30px;
+  padding-top: 20px;
   letter-spacing: 4px; 
 }
 .content-area p{
@@ -107,12 +109,38 @@ nav a:hover{
   top:30%;
   border-radius:40px;
   background-color: black;
-  padding: 30px;
+  padding: 20px;
 }
 .img_dfg{
   float: right;
   width: 50%;
 }
+.cta-container {
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff4500; /* Darker shade of Tomato */
+  transform: translateY(-5px);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
 .we_help{
   posotion:ce;
   width:60%;
@@ -121,7 +149,7 @@ nav a:hover{
   top:30%;
   border-radius:40px;
   background-color: black;
-  padding: 30px; 
+  padding: 10px; 
 }
 .flex-container {
   display: flex;
@@ -131,4 +159,13 @@ nav a:hover{
 
 .pos_cen, .we_help {
   width: 38%; /* Adjust the width as needed */
+}
+.footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

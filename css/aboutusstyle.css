@@ -72,7 +72,7 @@ nav a:hover {
 
 /* Image container styling */
 .image-container {
-  padding: 20px; /* Add padding around the image */
+  padding: 50px; /* Add padding around the image */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -81,7 +81,7 @@ nav a:hover {
 /* Image styling */
 .image-container img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 /* Container styling */
